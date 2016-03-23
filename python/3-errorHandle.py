@@ -22,6 +22,5 @@ else:
 
 
 
-html=urlopen('http://www.jsmean.com')
-bsObj=BeautifulSoup(html.read(),'html.parser')
-print(bsObj.header)
+html=getHttpHeader('http://www.jsmean.com')
+print(html)
